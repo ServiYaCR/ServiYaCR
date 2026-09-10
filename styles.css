@@ -354,9 +354,10 @@ h3 {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 640px;
   list-style: none;
-  gap: 10px;
+  gap: 12px;
   border-top: 0;
 }
 
@@ -464,7 +465,7 @@ a:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
   .steps, .steps-three { grid-template-columns: 1fr; }
   .steps li, .steps li + li, .steps-three li:nth-child(3) { min-height: 0; padding: 26px; border-right: 0; border-top: 0; border-bottom: 0; }
   .steps span { margin-bottom: 38px; }
-  .locations { grid-template-columns: 1fr 1fr; }
+  .locations { grid-template-columns: 1fr; }
   .benefit-grid { grid-template-columns: 1fr; }
   .benefit-grid article, .benefit-grid article:nth-child(even) { min-height: 0; padding: 28px; border-right: 0; }
   .benefit-grid article > p { margin-bottom: 38px; }
